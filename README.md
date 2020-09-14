@@ -1,5 +1,6 @@
 # flipkart_clone
 
+
 **Prerequisites:**
 
   1. Python 3
@@ -31,3 +32,19 @@
           database to the app.
 
           **$ pip install flask-sqlalchemy mysql-python**
+
+**Migration:**
+
+  Migrations allow us to manage changes we make to the models, and propagate these changes in
+
+  the database. For example, if later on we make a change to a field in one of the models, all we will
+
+  need to do is create and apply a migration, and the database will reflect the change.
+
+   **$ pip install flask-migrate**
+
+   **$ flask db init**
+
+   **$ flask db migrate**
+
+   **$ flask db upgrade**
